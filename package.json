@@ -2,20 +2,20 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/daszai/goit-js-hw-08",
+  "homepage": "https://github.com/daszai/goit-js-hw-10",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-10/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daszai/goit-js-hw-08"
+    "url": "git+https://github.com/daszai/goit-js-hw-10"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/daszai/goit-js-hw-08"
+    "url": "https://github.com/daszai/goit-js-hw-10"
   },
   "dependencies": {
     "@vimeo/player": "^2.24.0",
