@@ -22,7 +22,7 @@ selector.addEventListener('change', e => {
     console.log(data.breeds[0]);
     console.log(data);
     const catInfo = document.querySelector('div.cat-info');
-    catInfo.innerHTML = `<img scr="${data.url}" width="300px" alt="${data.breeds[0].name}"/>`;
+    catInfo.innerHTML = `<img src="${data.url}" width="300px" alt="${data.breeds[0].name}"><h2>${data.breeds[0].name}</h2><p>${data.breeds[0].description}</p><p>Temperament: ${data.breeds[0].temperament}</p>`;
   });
 });
 //${data.url}
