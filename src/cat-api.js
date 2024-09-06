@@ -1,3 +1,5 @@
+import Notiflix from 'notiflix';
+
 const error1 = document.querySelector('.error');
 
 export const fetchBreeds = function fetchBreeds() {
@@ -12,7 +14,9 @@ export const fetchBreeds = function fetchBreeds() {
       return data;
     })
     .catch(error => {
-      error1.removeAttribute('hidden');
+      Notiflix.Notify.warning(
+        'Oops! Something went wrong! Try reloading the page!'
+      );
     });
 };
 
@@ -39,10 +43,14 @@ export const fetchCatByBreed = function fetchCatByBreed(breedId) {
           return data;
         })
         .catch(error => {
-          error1.removeAttribute('hidden');
+          Notiflix.Notify.warning(
+            'Oops! Something went wrong! Try reloading the page!'
+          );
         });
     })
     .catch(error => {
-      error1.removeAttribute('hidden');
+      Notiflix.Notify.warning(
+        'Oops! Something went wrong! Try reloading the page!'
+      );
     });
 };
