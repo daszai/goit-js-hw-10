@@ -2,7 +2,7 @@ import axios from 'axios';
 import { fetchBreeds, fetchCatByBreed } from './cat-api';
 import SlimSelect from 'slim-select';
 import 'slim-select/dist/slimselect.css';
-import 'src/sass/index.css';
+
 axios.defaults.headers.common['x-api-key'] =
   'live_PegsaVy0gFlIx9bQiwwLvYjMVsD4iRQBMlMNMYLFv7Q4jUvOY8HIAauI2d4IpSIx';
 
