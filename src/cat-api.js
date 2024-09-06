@@ -1,8 +1,9 @@
+const error1 = document.querySelector('.error');
+
 export const fetchBreeds = function fetchBreeds() {
   return fetch('https://api.thecatapi.com/v1/breeds')
     .then(response => {
       if (!response.ok) {
-        //sprawdzenie błedu
         throw new Error(response.status);
       }
       return response.json();
@@ -11,7 +12,7 @@ export const fetchBreeds = function fetchBreeds() {
       return data;
     })
     .catch(error => {
-      console.log(error);
+      error1.removeAttribute('hidden');
     });
 };
 
@@ -24,25 +25,24 @@ export const fetchCatByBreed = function fetchCatByBreed(breedId) {
         //sprawdzenie błedu
         throw new Error(response.status);
       }
-      return response.json(); //jezleli jest typu  json
+      return response.json();
     })
     .then(data => {
       return fetch(`https://api.thecatapi.com/v1/images/${data[0].id}`)
         .then(response => {
           if (!response.ok) {
-            //sprawdzenie błedu
             throw new Error(response.status);
           }
-          return response.json(); //jezleli jest typu  json
+          return response.json();
         })
         .then(data => {
           return data;
         })
         .catch(error => {
-          // Error handling
+          error1.removeAttribute('hidden');
         });
     })
     .catch(error => {
-      console.log(error);
+      error1.removeAttribute('hidden');
     });
 };

@@ -22,7 +22,8 @@
     "axios": "^1.7.7",
     "lodash.throttle": "^4.1.1",
     "modern-normalize": "^1.1.0",
-    "simplelightbox": "^2.14.3"
+    "simplelightbox": "^2.14.3",
+    "slim-select": "^2.8.2"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
